@@ -7,11 +7,38 @@
         xmlns:local="clr-namespace:NET_PR3_2_z1"
     mc:Ignorable="d"
         
+    FontSize="24"
     Title="Podstawy"
     Height="450"
     Width="400"
     >
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
 
+        <Label
+            BorderThickness="2"
+            >
+            1
+        </Label>
+        <Label
+            Grid.Column="1"
+            >
+            2
+        </Label>
+        <Label
+            Grid.Column="2"
+            >
+            3
+        </Label>
     </Grid>
 </Window>
