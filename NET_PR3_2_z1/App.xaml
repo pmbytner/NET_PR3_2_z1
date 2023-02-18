@@ -38,13 +38,12 @@
         
         <Style TargetType="{x:Type Label}">
             <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
-            <Setter Property="Background" Value="{DynamicResource MójZłotyPędzel}"/>
+            <Setter Property="Background" Value="{StaticResource MójZłotyPędzel}"/>
             <Setter Property="BorderBrush" Value="Black"/>
             <Setter Property="BorderThickness" Value="2"/>
             <Setter Property="Padding" Value="5"/>
             <Setter Property="HorizontalContentAlignment" Value="Center"/>
             <Setter Property="VerticalContentAlignment" Value="Center"/>
-            
         </Style>
 
         <Style
@@ -64,6 +63,7 @@
                 <Setter.Value>
                     <ControlTemplate TargetType="{x:Type Label}">
                         <Border
+                            Background="{TemplateBinding Background}"
                             BorderBrush="{TemplateBinding BorderBrush}"
                             BorderThickness="{TemplateBinding BorderThickness}"
                             Padding="{TemplateBinding BorderThickness}"

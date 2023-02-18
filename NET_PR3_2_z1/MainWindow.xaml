@@ -12,6 +12,10 @@
     Height="450"
     Width="500"
     >
+    <Window.Resources>
+        <SolidColorBrush x:Key="MójZłotyPędzel" Color="#FA0"/>
+        <!--nadpisanie nie jest widoczne na Labelach, bo używają StaticResource a nie DynamicResource-->
+    </Window.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -93,5 +97,36 @@
             <Label Style="{DynamicResource L1}">8</Label>
             <Label Style="{DynamicResource L1}">9</Label>
         </WrapPanel>
+
+        <Label
+            Grid.Column="1"
+            Grid.Row="2"
+            >
+            Blok tekstu
+        </Label>
+        <TextBlock
+            Grid.Column="1"
+            Grid.Row="3"
+            TextWrapping="Wrap"
+            FontSize="20"
+            >
+            Blok tekstowy blok tekstu
+            A
+        </TextBlock>
+        
+        <Label
+            Grid.Column="2"
+            Grid.Row="2"
+            >
+            Pole tekstowe
+        </Label>
+        <TextBox
+            Grid.Column="2"
+            Grid.Row="3"
+            TextWrapping="Wrap"
+            FontSize="20"
+            >
+            Edytowalne pole tekstowe
+        </TextBox>
     </Grid>
 </Window>
