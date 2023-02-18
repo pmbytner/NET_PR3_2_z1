@@ -40,5 +40,27 @@
             >
             3
         </Label>
+        <ScrollViewer
+            Grid.Row="1"
+            Grid.RowSpan="3"
+            VerticalScrollBarVisibility="Hidden"
+            >
+            <StackPanel>
+                <Border Style="{DynamicResource B1}"/>
+                <Border Style="{DynamicResource B2}"/>
+                <Border Style="{DynamicResource B1}"/>
+                <Border Style="{DynamicResource B2}"/>
+                <Border Style="{DynamicResource B1}"/>
+                <Border Style="{DynamicResource B2}"/>
+                <Border Style="{DynamicResource B1}"/>
+                <Border Style="{DynamicResource B2}"/>
+                <Border Style="{DynamicResource B1}"/>
+                <Border Style="{DynamicResource B2}"/>
+                <Border Style="{DynamicResource B1}"/>
+                <Border Style="{DynamicResource B2}"/>
+                <Border Style="{DynamicResource B1}"/>
+                <Border Style="{DynamicResource B2}"/>
+            </StackPanel>
+        </ScrollViewer>
     </Grid>
 </Window>

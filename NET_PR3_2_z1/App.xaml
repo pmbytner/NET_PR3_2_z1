@@ -10,6 +10,31 @@
          
         <Color x:Key="MójZłotyKolor">#FFE5AD41</Color>
         <SolidColorBrush x:Key="MójZłotyPędzel" Color="{DynamicResource MójZłotyKolor}"/>
+
+        <Style
+            x:Key="B0"
+            TargetType="{x:Type Border}"
+            >
+            <Setter Property="BorderThickness" Value="5"/>
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+        <Style
+            x:Key="B1"
+            TargetType="{x:Type Border}"
+            BasedOn="{StaticResource B0}"
+            >
+            <Setter Property="BorderBrush" Value="#099"/>
+            <Setter Property="Background" Value="#FAE"/>
+        </Style>
+        <Style
+            x:Key="B2"
+            TargetType="{x:Type Border}"
+            BasedOn="{StaticResource B0}"
+            >
+            <Setter Property="BorderBrush" Value="#009"/>
+            <Setter Property="Background" Value="#EFA"/>
+        </Style>
         
         <Style TargetType="{x:Type Label}">
             <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
